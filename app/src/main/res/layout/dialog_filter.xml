@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <TextView
+          android:id="@+id/tvDate"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/tvDesk"
+          android:layout_alignParentTop="true"
+          android:layout_alignStart="@+id/tvDesk"
+          android:layout_marginLeft="18dp"
+          android:layout_marginStart="18dp"
+          android:layout_marginTop="92dp"
+          android:text="@string/fileter_date"/>
+
+      <DatePicker
+          android:id="@+id/datePicker"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_toEndOf="@+id/tvDesk"
+          android:layout_toRightOf="@+id/tvDesk"
+          android:calendarViewShown="false"
+          android:datePickerMode="spinner"/>
+
+      <TextView
+          android:id="@+id/tvSortOrder"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/ckArts"
+          android:layout_alignLeft="@+id/tvDate"
+          android:layout_alignStart="@+id/tvDate"
+          android:text="@string/filter_sort"/>
+
+      <Spinner
+          android:id="@+id/spinner"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignEnd="@+id/ckSP"
+          android:layout_alignRight="@+id/ckSP"
+          android:layout_below="@+id/datePicker"/>
+
+      <TextView
+          android:id="@+id/tvDesk"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ckFS"
+          android:layout_alignBottom="@+id/ckFS"
+          android:layout_marginLeft="16dp"
+          android:layout_marginStart="16dp"
+          android:text="@string/filter_desk"/>
+
+      <CheckBox
+          android:id="@+id/ckArts"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/spinner"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="45dp"
+          android:text="@string/desk_arts"/>
+
+      <CheckBox
+          android:id="@+id/ckFS"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/ckArts"
+          android:layout_alignStart="@+id/ckArts"
+          android:layout_below="@+id/ckArts"
+          android:text="@string/desk_FS"/>
+
+      <CheckBox
+          android:id="@+id/ckSP"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/ckFS"
+          android:layout_below="@+id/ckFS"
+          android:text="@string/desk_SP"/>
+
+   </RelativeLayout>
+</layout>

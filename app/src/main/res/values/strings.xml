@@ -1,0 +1,23 @@
+<resources>
+   <string name="app_name">NYTimesSearch</string>
+   <string name="action_settings">Settings</string>
+   <string name="hint">Enter search quert</string>
+   <string name="search">Search</string>
+
+   <!-- TODO: Remove or change this placeholder text -->
+   <string name="hello_blank_fragment">Hello blank fragment</string>
+   <string name="dialog_ok">OK</string>
+   <string name="dialog_cancel">Cancel</string>
+   <string name="fileter_date">Begin Date</string>
+   <string name="filter_sort">Sort Order</string>
+   <string name="filter_desk">News Desk Values</string>
+   <string name="desk_arts">Arts</string>
+   <string name="desk_FS">Fashion &amp; Style</string>
+   <string name="desk_SP">Sports</string>
+   <string name="menu_search">Search</string>
+
+   <string-array name="sort_method">
+      <item>oldest</item>
+      <item>newest</item>
+   </string-array>>
+</resources>
